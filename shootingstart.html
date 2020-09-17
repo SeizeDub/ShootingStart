@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+        <meta charset=utf-8>
+        <link rel="stylesheet" href=shootingstart.css >
+        <title>ShootingStart</title>
+    </head>
+
+    <body>
+
+        <div id=block-page></div>
+
+
+        <div id=black-screen style=display:none>
+
+            <div id=signet-menu class=menu style=display:none>
+                <input id=signet-title-input class=main-input type=text placeholder=Title spellcheck=false>
+                <input id=signet-link-input class=main-input type=text placeholder=URL spellcheck=false>
+                <div id=signet-imagebox>
+                    <div id=dndtag></div>
+                </div>
+                <div class='small-row english' style=top:120px>
+                    <input id=signet-imagesearch-input type=file accept=image/* style=display:none>
+                    <button id=signet-imagesearch-button>Search</button>
+                    <div id=signet-imagename-field></div>
+                </div>
+                <div class='small-row english' style=top:160px>
+                    <input id=signet-imagelink-input type=text placeholder='Image URL' spellcheck=false>
+                </div>
+                <div class=button-row>
+                    <button id=signet-delete>Delete</button>
+                    <button id=signet-cancel>Cancel</button>
+                    <button id=signet-validate>Apply</button>
+                </div>
+            </div>
+        
+            <div id=background-menu class=menu style=display:none>
+                <button id=newcategory-button class=bigbutton type=button>Create new category</button>
+                <span id=background-modiftext>Change background image</span>
+                <div id=background-imagebox>
+                    <div id=dndtag></div>
+                </div>
+                <div class='small-row english' style=top:120px>
+                    <input id=background-imagesearch-input type=file accept=image/* style=display:none>
+                    <button id=background-imagesearch-button>Search</button>
+                    <div id=background-imagename-field></div>
+                </div>
+                <div class='small-row english' style=top:160px>
+                    <input id=background-imagelink-input type=text placeholder='Image URL' spellcheck=false>
+                </div>
+                <div class=button-row>
+                    <button id=background-cancel>Cancel</button>
+                    <button id=background-validate>Apply</button>
+                </div>
+            </div>
+    
+            <div id=category-menu class=menu style=display:none>
+                <span id=category-renametext>Rename category</span>
+                <input id=category-input type=text spellcheck=false maxlength=20>
+                <div class=button-row>
+                    <button id=category-delete>Delete</button>
+                    <button id=category-cancel type=button>Cancel</button>
+                    <button id=category-validate type=button>Apply</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <script src=shootingstart.js></script>
+    </body>
+
+</html>

@@ -1,0 +1,42 @@
+{
+  "name": "ShootingStart",
+
+  "manifest_version": 2,
+
+  "version": "1.5.8",
+
+  "author": "SeizeDub",
+
+  "description": "A fast and practical customizable homepage.",
+
+  "background": {
+    "scripts" : ["background.js"]
+  },
+
+  "chrome_settings_overrides" : {
+    "homepage": "shootingstart.html"
+  },
+
+  "chrome_url_overrides" : {
+    "newtab": "shootingstart.html"
+  },
+
+  "permissions": [
+    "tabs",
+    "menus"
+  ],
+
+  "icons": {
+    "48": "icons/shootingstart-48.png",
+    "96": "icons/shootingstart-96.png"
+  },
+
+  "web_accessible_resources": [
+    "shootingstart.js",
+    "shootingstart.css",
+    "images/background.jpg",
+    "fonts/Titillium_Web.woff2",
+    "fonts/Titillium_Web.woff"
+  ]
+
+}
